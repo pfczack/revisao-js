@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão JS</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <h1>Bem-vindo!</h1>
+    <button id="entrarBtn">Entrar</button>
+    <div id="saudacao"></div>
+    
+    <div>
+        <label for="nome">Digite seu nome: </label>
+        <input type="text" id="nome" />
+        <button id="enviarBtn">Enviar</button>
+    </div>
+
+    <div>
+        <h2>Data Atual:</h2>
+        <p id="dataAtual"></p>
+    </div>
+
+    <div>
+        <label for="notas">Digite suas notas (separadas por vírgula): </label>
+        <input type="text" id="notas" />
+        <button id="calcularMediaBtn" ondblclick="calcularMedia()">Duplo Clique para Calcular</button>
+        <div id="resultadoMedia"></div>
+    </div>
+
+    <div>
+        <h2>Operações Matemáticas</h2>
+        <input type="number" id="num1" placeholder="Número 1" />
+        <input type="number" id="num2" placeholder="Número 2" />
+        <select id="operacao">
+            <option value="adicao">Adição</option>
+            <option value="subtracao">Subtração</option>
+            <option value="porcentagem">Porcentagem</option>
+            <option
+            value="multiplicacao">Multiplicacao</option>
+        </select>
+        <button id="calcularBtn">Calcular</button>
+        <div id="resultadoCalculo"></div>
+    </div>
+
+    <h2>Tabela de Notas</h2>
+    <table id="tabelaNotas">
+        <thead>
+            <tr>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyNotas"></tbody>
+    </table>
+
+    <button id="limparBtn">Limpar Tudo</button>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
